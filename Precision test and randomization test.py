@@ -14,14 +14,14 @@ n_perm   = 10_000       # Number of randomizations
 tasks_acc = {
     "LastLetter":   (0.85, 0.10),
     "CircuitValue": (0.95, 0.15),
-    "S5Permutation":(0.98, 0.20),
+    "5×5 Multiplication":(0.964, 0.019),
     "MultiArith":   (0.80, 0.20),
     "CoinFlip":     (0.95, 0.50),
     "GSM8K":        (0.659, 0.354),
     "AQuA":         (0.58, 0.40),
-    "CSQA":         (0.82, 0.70),
+    "GSM8K-Aug":    (0.219, 0.17),
     "Parity":       (0.95, 0.50),
-    "ModularAdd":   (0.99, 0.95),
+    "Llama-3-8B Arithmetic":   (0.80, 0.42),
 }
 
 results = []
