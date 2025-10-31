@@ -5,16 +5,16 @@ import pandas as pd
 from matplotlib.colors import LinearSegmentedColormap
 
 index = ['A1 Expressiveness', 'A2 Statistical Learning', 'A3 Optimization Dynamics',
-         'A4 Implicit Programs', 'A5 Cognitive Inspiration', 'A6 Information Theory']
-columns = ['S5', 'Circuit', 'GSM8K', 'StrategyQA', 'CoinFlip', 'MultiArith',
-           'AQuA', 'CSQA', 'LastLetter', 'Parity', 'ModularAdd']
+         'A4 implicit vertical reasoning', 'A5 Cognitive Inspiration', 'A6 Information Theory']
+columns = ['Circuit', 'GSM8K', '5×5 Multiplication', 'CoinFlip', 'MultiArith',
+           'AQuA', 'GSM8K-Aug', 'LastLetter', 'Parity', 'Llama-3-8B Arithmetic']
 data = [
-    [3.9, 5.3, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.90, 0.04],
-    [np.nan, np.nan, 0.86, np.nan, np.nan, np.nan, 0.45, np.nan, np.nan, np.nan, np.nan],
-    [np.nan, np.nan, np.nan, np.nan, np.nan, 3.0, np.nan, np.nan, np.nan, np.nan, 0.04],
-    [3.9, 5.3, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan],
-    [np.nan, np.nan, np.nan, 0.30, 0.90, np.nan, np.nan, np.nan, 7.5, np.nan, np.nan],
-    [np.nan, np.nan, 0.86, np.nan, np.nan, np.nan, np.nan, 0.17, np.nan, np.nan, np.nan]
+    [ 5.3, np.nan, np.nan, np.nan, 3.0, np.nan, np.nan, 7.5, 0.90, np.nan],
+    [ np.nan, 0.86, np.nan, np.nan, np.nan, 0.45, np.nan, np.nan, np.nan, np.nan],
+    [ np.nan, np.nan, np.nan, np.nan, 3.0, np.nan, np.nan, np.nan, np.nan, np.nan],
+    [np.nan, np.nan, 49.7, np.nan, np.nan, np.nan, 0.29, np.nan, np.nan, np.nan],
+    [np.nan, np.nan, np.nan, 0.90, np.nan, np.nan, np.nan, 7.5, np.nan, np.nan],
+    [np.nan, 0.86, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.90]
 ]
 
 df = pd.DataFrame(data, index=index, columns=columns)
